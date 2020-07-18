@@ -28,9 +28,6 @@ font-size: 2rem;
 .height-80{
     min-height: 80vh;
 }
-.nav-link{
-    color: white;
-}
 .nav-link:hover{
     color: #333333;
    }
@@ -56,6 +53,7 @@ font-size: 2rem;
  .hero-img{
      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(255, 166, 0, 0.438)), url(../Img/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg);
      background-size: cover;
+     background-position: center;
      background-repeat: no-repeat;
      background-attachment: fixed;
      max-width: 100%;
@@ -69,8 +67,7 @@ font-size: 2rem;
      position: absolute;
      text-align: left;
      margin-left: 100px;
-     width: 50%;
-     top: 30%;
+     top: 20%;
  }
  .first-overlay h1{
      font-size: 3rem;
@@ -237,38 +234,34 @@ hr{
     }
 
     #navbarMenu{
-        background-color: white;
-        color: #333333;
+        background-color: #333333;
         border-radius: 8px;
-        margin-left: 20px;
-        margin-top: 50px;
         padding: 20px 10px;
+        margin: 25px 30px;
+        margin-top: 50px;
     }
 .nav-link{
     color: #333333;
 }
-
     .hero-img{
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(255, 166, 0, 0.438)), url(../Img/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg);
         width: 100% !important; 
-        height: 600px;
-        background-size: contain !important;
+        height: 500px;
+        background-size: cover !important;
+        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
     .first-overlay{
         color: white !important;
         position: absolute;
-        text-align: left !important;
-        bottom: 10%;
-        width: 100%;
-        padding: 0;
-        margin: 0 30px;
+        text-align: center !important;
+        margin: 50px 30px;
     }
     .first-overlay h1{
         font-size: 2rem;
-        width:100% !important;
     }
+    
     .visual h1{
         font-size: 40px;
     }
@@ -291,17 +284,29 @@ footer .links ul li{
     list-style: none;
     line-height: 30px;
 }
-.links p{
-    color: white;
-    margin-left: 45px;
+
 }
-.logo{
-    margin-left: 40px;
-}
-}
-@media query and(device-width: 414px){
-    footer{
-        min-height: 100%;
+@media screen and (max-width: 414px){
+    .hero-img{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #navbarMenu{
+        background-color: #333333;
+        color: #333333;
+        border-radius: 8px;
+        padding: 20px 15px;
+        margin: 40px 10px;
+    }
+    .first-overlay{
+        text-align: center !important;   
+        margin: 20px 30px;  
+    }
+    .logo{
+        margin-left: 45px !important;
+    }
+    .links p{
+        margin-left: 45px;
     }
 }
-
