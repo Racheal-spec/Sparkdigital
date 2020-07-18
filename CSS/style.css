@@ -11,6 +11,7 @@ body {
     
 .logo {
     margin-left: 100px;
+    text-decoration: none;
 }
 .spark{
 color: orange;
@@ -227,9 +228,11 @@ hr{
 .fade-in.appear{
     opacity: 1;
 }
+@media screen and (max-width: 768px){
 
+}
 
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
     .logo{
         margin-left: 0;
     }
