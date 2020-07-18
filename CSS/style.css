@@ -65,9 +65,10 @@ font-size: 2rem;
  .first-overlay{
      color: white;
      position: absolute;
-     text-align: left;
+     text-align: center;
      margin-left: 100px;
-     top: 20%;
+     top: 35%;
+     left: 15%;
  }
  .first-overlay h1{
      font-size: 3rem;
@@ -256,7 +257,8 @@ hr{
         color: white !important;
         position: absolute;
         text-align: center !important;
-        margin: 50px 30px;
+        top: 20%;
+        left: 10%;
     }
     .first-overlay h1{
         font-size: 2rem;
@@ -301,7 +303,11 @@ footer .links ul li{
     }
     .first-overlay{
         text-align: center !important;   
-        margin: 20px 30px;  
+        top: 30%;
+        left: -15%;
+    }
+    .first-overlay h1{
+        font-size: 2rem;
     }
     .logo{
         margin-left: 45px !important;
