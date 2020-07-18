@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+p{font-size: 20px;}
+#first-pic{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.651), rgba(255, 255, 255, 0.514)), url('../Img/pic6.jpeg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px; 
+    color: cornsilk;
+}
+
+.title-underline{
+    width: 100px;
+    height: 5px;
+    background-color: rgba(218, 165, 32, 0.884);
+    margin: 0 auto;
+}
+.bold-heading{
+    margin-top: 120px;
+}
+.logo {
+    margin-left: 20px;
+    color: rgba(218, 165, 32, 0.884);
+    font-size: 3rem;
+}
+.nav-link{
+    color: rgba(218, 165, 32, 0.884);
+}
+.navbar{
+    height: 70px;
+    opacity: 0.8;
+
+}
+.nav-link:hover{
+    color: gray;
+   }
+   .link{
+    border: rgba(218, 165, 32, 0.884) solid 2px;
+    color: #808080;
+
+    background-image: linear-gradient(to top, rgba(218, 165, 32, 0.884) 50%, transparent 50%);
+    background-position: 100% 0%;
+    background-size: 100% 200%;
+    transition: 0.5s;
+}
+.link:hover{
+    text-decoration: none;
+    color: cornsilk;
+    background-position: 0% 100%;
+    cursor: pointer;
+}
+
+
+.links ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.last-link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.links ul li a{
+    color: cornsilk;
+}
+.links p{
+    color: rgba(218, 165, 32, 0.884);
+}
+.links h2{
+    color: rgba(218, 165, 32, 0.884);
+}
+.first-link{
+    color: rgba(218, 165, 32, 0.884);
+}
+hr{
+    height: 1px;
+    color: rgba(218, 165, 32, 0.884);
+    background-color: rgba(218, 165, 32, 0.884);
+    border: none;
+}
+.about-pic{
+    background-image: url(../Img/man1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 600px;
+}
+
+.about-background{
+    background-color: rgba(218, 165, 32, 0.616);
+    width: 90%;
+    opacity: 0.8;
+    
+}
+@media screen and (max-width:768px){
+    .about-pic{
+        background-image: url(../Img/man1.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 400px;
+        max-width: 100%;
+    }
+    .last-link{
+        display: block;
+        margin-left: 10px;
+    }
+    .about-background{
+        background-color: rgba(218, 165, 32, 0.616);
+        opacity: 0.8;
+       width: 300px;      
+}
+
+}
+@media only screen and (min-width:768px){
+    .about-pic{
+        background-image: url(../Img/man1.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+}
