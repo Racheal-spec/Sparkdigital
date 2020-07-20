@@ -1,126 +1,194 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-p{font-size: 20px;}
-#first-pic{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.651), rgba(255, 255, 255, 0.514)), url('../Img/pic6.jpeg');
-background-attachment: fixed;
-background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 450px; 
-    color: cornsilk;
+body{
+        font-family: 'Playfair Display', serif;
+         font-size: 18px; 
+         background-color: white;
+}
+h2{
+    font-size: 3rem;
+}
+.logo {
+    margin-left: 100px;
+    text-decoration: none;
+}
+.spark{
+color: orange;
+font-family: 'Pacifico', cursive;
+font-size: 2rem;
+}
+.dig{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Pacifico', cursive;
+}
+.height{
+    min-height: 100vh;
+}
+.height-80{
+    min-height: 80vh;
+}
+.navbar{
+    background-color: #333333;
+}
+.nav-link:hover{
+    color: #333333;
+   }
+
+.link{
+   border: orange solid 2px;
+   color: #333333;
+   background-image: linear-gradient(to top, orange 50%, transparent 50%);
+   background-position: 100% 0%;
+   background-size: 100% 200%;
+   transition: 0.5s;
+}
+.link:hover{
+   text-decoration: none;
+   color: white;
+   background-position: 0% 100%;
+   cursor: pointer;
 }
 
+.image{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.801)), url(../Img/people1.jpeg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0%,100% 66%, 0% 100%);
+    -webkit-clip-path: polygon(0 0,100% 0%,100% 0%, 0% 100%);
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.slant-heading{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    color: white;
+    font-size: 4rem;
+}
 .title-underline{
     width: 100px;
     height: 5px;
-    background-color: rgba(218, 165, 32, 0.884);
+    background-color: orange;
     margin: 0 auto;
 }
-.bold-heading{
-    margin-top: 120px;
+.about{
+    width: 100%;
+    height: 500px;
+    background: orange;
+    display: flex;
+    padding: 50px 50px;
+    position: relative;
 }
-.logo {
-    margin-left: 20px;
-    color: rgba(218, 165, 32, 0.884);
-    font-size: 3rem;
+.about-pic{
+    width: 50%;
+    height: 100%;
+    background:  url(../Img/man1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
 }
-.nav-link{
-    color: rgba(218, 165, 32, 0.884);
+.about-background{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        border-left: 0px solid #000;
+        border-bottom: 500px solid transparent;
+        padding: 0 20px;
 }
-.navbar{
-    height: 70px;
-    opacity: 0.8;
-
+footer{
+    background-color: #333333;
+    min-height: 100%;
+    position: relative;
 }
-.nav-link:hover{
-    color: gray;
-   }
-   .link{
-    border: rgba(218, 165, 32, 0.884) solid 2px;
-    color: #808080;
-
-    background-image: linear-gradient(to top, rgba(218, 165, 32, 0.884) 50%, transparent 50%);
-    background-position: 100% 0%;
-    background-size: 100% 200%;
-    transition: 0.5s;
+.dig-footer{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Pacifico', cursive;
 }
-.link:hover{
-    text-decoration: none;
-    color: cornsilk;
-    background-position: 0% 100%;
-    cursor: pointer;
+ a .logo{
+    margin-left: 5px;
 }
-
-
-.links ul li{
+footer .links ul li{
     text-decoration: none;
     list-style: none;
 }
-.last-link{
+footer .last-link{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 70px;
+    color: white;
+    cursor: pointer;
+
+}
+footer .last-link:hover{
+    color: orange;
 }
 .links ul li a{
-    color: cornsilk;
+    color: white;
 }
 .links p{
-    color: rgba(218, 165, 32, 0.884);
+    color: white;
 }
 .links h2{
-    color: rgba(218, 165, 32, 0.884);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
-.first-link{
-    color: rgba(218, 165, 32, 0.884);
+
+.follow{
+    color: white;
 }
 hr{
     height: 1px;
-    color: rgba(218, 165, 32, 0.884);
-    background-color: rgba(218, 165, 32, 0.884);
+    color: orange;
+    background-color: orange;
     border: none;
 }
-.about-pic{
-    background-image: url(../Img/man1.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-    height: 600px;
-}
-
-.about-background{
-    background-color: rgba(218, 165, 32, 0.616);
-    width: 90%;
-    opacity: 0.8;
-    
-}
 @media screen and (max-width:768px){
-    .about-pic{
-        background-image: url(../Img/man1.jpg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
-        height: 400px;
-        max-width: 100%;
+    h2{
+        font-size: 2rem;
     }
-    .last-link{
-        display: block;
-        margin-left: 10px;
+    .menu{
+        color: white;
+    }
+    .slant-heading{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .about{
+    width: 100%;
+    height: 1100px; 
+    }
+    .about-pic{
+      width: 80%;
+      height: 300px;
+      top: 5%;
+      left: 10%;
+      position: absolute;
     }
     .about-background{
-        background-color: rgba(218, 165, 32, 0.616);
-        opacity: 0.8;
-       width: 300px;      
-}
-
-}
-@media only screen and (min-width:768px){
-    .about-pic{
-        background-image: url(../Img/man1.jpg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
+        position: absolute;
+        text-align: center;
+        bottom: 18%;
+        width: 80%;
+        height: 300px;
+    }
+    .logo{
+        margin-left: 45px !important;
+    }
+    .links p{
+        margin-left: 45px;
     }
 }
+
+

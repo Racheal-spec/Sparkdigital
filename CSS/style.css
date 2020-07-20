@@ -228,9 +228,6 @@ hr{
 .fade-in.appear{
     opacity: 1;
 }
-@media screen and (max-width: 768px){
-
-}
 
 @media screen and (max-width:768px){
     .logo{
@@ -289,7 +286,12 @@ footer .links ul li{
     list-style: none;
     line-height: 30px;
 }
-
+.logo{
+    margin-left: 45px !important;
+}
+.links p{
+    margin-left: 45px;
+}
 }
 @media screen and (max-width: 414px){
     .hero-img{
