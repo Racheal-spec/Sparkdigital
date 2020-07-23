@@ -159,11 +159,15 @@ hr{
     }
     .slant-heading{
         position: absolute;
-        top: 25%;
+        top: 26%;
         left: 10%;
         color: white;
         font-size: 3rem;
         text-align: center;
+    }
+    .image{
+    clip-path: polygon(0 0,100% 0%,100% 86%, 0% 100%);
+    -webkit-clip-path: polygon(0 0,100% 0%,100% 0%, 0% 100%);
     }
     .about{
     width: 100%;

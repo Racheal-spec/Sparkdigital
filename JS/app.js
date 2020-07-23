@@ -2,7 +2,7 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
 let options = {
-    threshold : 0.3,
+    threshold : 0.5,
     rootMargin : "0px 0px -100px 0px"
 };
 
@@ -30,36 +30,7 @@ sliders.forEach(slide => {
 })
 
 
-
-/*
-const sliders = document.querySelectorAll('.slide');
-
-
-window.addEventListener('scroll', revealSection);
-
-function revealSection(){
-const slidersPos = sliders.getBoundingClientRect().top;
-console.log(slidersPos);
-
-
-}
-*/
-
-
-
-/*
-let controller;
-
-function animeTab(){
-controller = new ScrollMagic.Controller();
-const slides = document.querySelectorAll('.slide');
-slides.forEach(slide => {
-    const revealImg = slide.querySelector('.reveal-img');
-    const img = slide.querySelector('img');
-    const revealText = slide.querySelector('.reveal-text');
-  gsap.to(revealImg, 1 , {x : "100%"});
-});
-}
-
-animeTab();
+/*gsap.to(".hero-text", {duration: 2, y:1500, scale: -1, rotate:180});
+var tl = gsap.timeline({repeat: 30, repeatDelay: 1});
+gsap.to(".hero-img", {duration: 1, scale: 1});
 */
