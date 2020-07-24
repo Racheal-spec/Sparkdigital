@@ -1,3 +1,4 @@
+
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
@@ -7,7 +8,6 @@ let options = {
 };
 
 let appearOnScroll = new IntersectionObserver(slideAnime, options);
-
 
 function slideAnime(entries){
 entries.forEach(entry => {

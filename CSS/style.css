@@ -9,7 +9,7 @@ body {
      background-color: white;
     }
     
-.logo {
+.logo:hover{
     text-decoration: none;
 }
 .spark{
@@ -18,12 +18,9 @@ font-family: 'Pacifico', cursive;
 font-size: 2rem;
 }
 .dig{
-    color: white;
+    color: black;
     font-size: 1rem;
     font-family: 'Pacifico', cursive;
-}
-.height{
-    min-height: 100vh;
 }
 
 .nav-link:hover{
@@ -44,12 +41,12 @@ font-size: 2rem;
    background-position: 0% 100%;
    cursor: pointer;
 }
-.h-img{
-    width: 100%;
-    height: auto;
-}
 header{
     background-color: orange;
+    min-height: 100vh;
+}
+.hero-spark{
+    color: #333333;
 }
 .hero-section .row{
     display: flex;
@@ -63,7 +60,6 @@ margin-top: 80px;
 }
 .hero-section h1{
     font-size: 4rem;
-    margin-top: 80px;
     color: white;
 }
  
@@ -96,7 +92,7 @@ margin-top: 80px;
     margin-right: 60px;
 }
 .cta-img{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(255, 166, 0, 0.438)), url(../Img/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.657)), url(../Img/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,11 +107,16 @@ margin-top: 80px;
     color: white;
     position: absolute;
     text-align: center; 
-    margin-top: -50%;
-    left:20%;
+    left:5%;
+    margin-top: -25%;
+    width: 50%;
 }
 .cta-overlay h1{
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+.overlay-span{
+    color: orange;
 }
 
 .social-media img{
@@ -141,7 +142,16 @@ margin-top: 80px;
     padding: 50px 0;
 }
 .card-body{
-    border: 1px solid orange ;
+    /*border: 1px solid orange ;*/
+    box-shadow: 2px 8px 6px 6px rgba(0, 0, 0, 0.068);
+}
+.card-link{
+    font-size: 1rem;
+    color: orange;
+    font-weight: bold;
+}
+.card-link:hover{
+    color: #333333;
 }
 .price-heading h1{
     font-size: 3rem;
@@ -175,6 +185,11 @@ footer{
     min-height: 100%;
     position: relative;
 }
+.spark-footer{
+    color: orange;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive; 
+}
 .dig-footer{
     color: white;
     font-size: 1rem;
@@ -199,19 +214,19 @@ footer .last-link:hover{
     color: orange;
 }
 .links ul li a{
-    color: white;
+    color: rgba(255, 255, 255, 0.794);
 }
 .links p{
-    color: white;
+    color: rgba(255, 255, 255, 0.794);
 }
 .links h2{
-    color: white;
+    color: rgba(255, 255, 255, 0.794);
     font-weight: bold;
     font-size: 18px;
 }
 
 .follow{
-    color: white;
+    color: rgba(255, 255, 255, 0.794);
 }
 hr{
     height: 1px;
@@ -219,6 +234,7 @@ hr{
     background-color: orange;
     border: none;
 }
+/*Animations*/
 
 .slide-left{
     transform: translate(-50%);
@@ -243,12 +259,15 @@ hr{
 .fade-in.appear{
     opacity: 1;
 }
+/*
+.fade-in.appear{
+    -webkit-animation-delay: 0ms;
+}
+*/
 .animate__animated .animate__fadeInDown{
     --animate-duration: 2s;
 }
-.animate__animated .animate__pulse{
-    --animate-duration: infinite;
-}
+
 @media screen and (max-width:768px){
     #navbarMenu{
         background-color: #333333;
@@ -260,24 +279,23 @@ hr{
 .nav-link{
     color: #333333;
 }
-    .cta-img{
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(255, 166, 0, 0.438)), url(../Img/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg);
-        width: 100% !important; 
-        height: 600px;
-        background-size: cover !important;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    /*
-    .first-overlay{
-        color: white !important;
+.hero-section h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+ 
+    .cta-overlay{
+        color: white;
         position: absolute;
-        text-align: center !important;
-        top: 10%;
-        left: 8%;
+        text-align: center; 
+        left: 5%;
+        margin-bottom: 50%;
+        width: 100%;
     }
-    */
+    .cta-img{
+        height: 400px;
+    }
     .cta-overlay h1{
         font-size: 2rem;
     }
@@ -324,20 +342,22 @@ footer .links ul li{
         padding: 20px 15px;
         margin: 40px 10px;
     }
-    /*
-    .first-overlay{
-        text-align: center !important;   
-        top: 10%;
-        left: -24%;
+    .cta-overlay{
+        width: 100%;
     }
-    */
+}
+@media screen and (max-width: 800px){
+    header{
+        min-height: 50vh;
+    }
+    .hero-section{
+        margin-top: 60px;
+    }
+    .cta-overlay{
+        width: 80%;
+        margin-bottom: 60%;
+    }
     .cta-overlay h1{
-        font-size: 2rem;
-    }
-    .logo{
-        margin-left: 45px !important;
-    }
-    .links p{
-        margin-left: 45px;
+        font-size: 3rem;
     }
 }
