@@ -43,7 +43,7 @@ font-size: 2rem;
 }
 header{
     background-color: orange;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 .hero-spark{
     color: #333333;
@@ -268,6 +268,22 @@ hr{
     --animate-duration: 2s;
 }
 
+@media screen and (max-width: 990px){
+    header{
+        min-height: 50vh;
+    }
+    .hero-section{
+        margin-top: 60px;
+    }
+    .cta-overlay{
+        width: 80%;
+        margin-bottom: 60%;
+    }
+    .cta-overlay h1{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width:768px){
     #navbarMenu{
         background-color: #333333;
@@ -279,6 +295,12 @@ hr{
 .nav-link{
     color: #333333;
 }
+/*
+.hero-section .row{
+    display: flex;
+    flex-direction: column-reverse;
+}
+*/
 .hero-section h1{
     font-size: 3rem;
     text-align: center;
@@ -344,20 +366,10 @@ footer .links ul li{
     }
     .cta-overlay{
         width: 100%;
+        margin-bottom: 50% !important;
+    }
+    .hero-img{
+        margin-bottom: 20% !important;
     }
 }
-@media screen and (max-width: 800px){
-    header{
-        min-height: 50vh;
-    }
-    .hero-section{
-        margin-top: 60px;
-    }
-    .cta-overlay{
-        width: 80%;
-        margin-bottom: 60%;
-    }
-    .cta-overlay h1{
-        font-size: 3rem;
-    }
-}
+
