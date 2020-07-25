@@ -10,7 +10,7 @@ body {
     }
     
 .logo:hover{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .spark{
 color: white;
@@ -43,7 +43,7 @@ font-size: 2rem;
 }
 header{
     background-color: orange;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 .hero-spark{
     color: #333333;
@@ -106,14 +106,14 @@ margin-top: 80px;
 .cta-overlay{
     color: white;
     position: absolute;
-    text-align: center; 
-    left:5%;
-    margin-top: -25%;
+    text-align: left; 
+    left: 4%;
+    margin-top: -40%;
     width: 50%;
 }
 .cta-overlay h1{
-    font-size: 4rem;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 .overlay-span{
     color: orange;
@@ -259,11 +259,6 @@ hr{
 .fade-in.appear{
     opacity: 1;
 }
-/*
-.fade-in.appear{
-    -webkit-animation-delay: 0ms;
-}
-*/
 .animate__animated .animate__fadeInDown{
     --animate-duration: 2s;
 }
@@ -311,8 +306,8 @@ hr{
         color: white;
         position: absolute;
         text-align: center; 
-        left: 5%;
-        margin-bottom: 50%;
+        left: 0;
+        margin-bottom: 40% !important;
         width: 100%;
     }
     .cta-img{
@@ -367,6 +362,7 @@ footer .links ul li{
     .cta-overlay{
         width: 100%;
         margin-bottom: 50% !important;
+        left: 0;
     }
     .hero-img{
         margin-bottom: 20% !important;
