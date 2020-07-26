@@ -15,6 +15,12 @@ h2{
     margin-left: 100px;
     text-decoration: none;
 }
+.navbar .container a:hover{
+    text-decoration: none !important;
+}
+#navbarMenu ul li a{
+    margin: 0 15px;
+}
 .spark{
 color: orange;
 font-family: 'Pacifico', cursive;
@@ -39,7 +45,7 @@ font-size: 2rem;
    }
 
 .link{
-   border: orange solid 2px;
+   /*border: orange solid 2px;*/
    color: #333333;
    background-image: linear-gradient(to top, orange 50%, transparent 50%);
    background-position: 100% 0%;
@@ -128,7 +134,19 @@ footer .last-link{
     cursor: pointer;
 
 }
-footer .last-link:hover{
+footer .links .row .col a:hover{
+    text-decoration: none;
+}
+.last-link .fa-instagram:hover{
+    color: orange;
+}
+.last-link .fa-twitter:hover{
+    color: orange;
+}
+.last-link .fa-linkedin:hover{
+    color: orange;
+}
+.last-link .fa-facebook:hover{
     color: orange;
 }
 .links ul li a{
@@ -165,6 +183,14 @@ hr{
     }
     .menu{
         color: white;
+    }
+    .link{
+    border: orange solid 2px;
+    color: #333333;
+   background-image: linear-gradient(to top, orange 50%, transparent 50%);
+   background-position: 100% 0%;
+   background-size: 100% 200%;
+   transition: 0.5s;
     }
     .slant-heading{
         position: absolute;
