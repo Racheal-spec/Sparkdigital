@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Playfair Display', serif;
          font-size: 18px; 
@@ -61,7 +62,7 @@ font-size: 2rem;
    cursor: pointer;
 }
 .contact-form{
-    background-image: url(../img/contact-4.png);
+    background-image: url(../Img/undraw_among_nature_p1xb.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -70,7 +71,7 @@ font-size: 2rem;
     list-style: none;
 }
 #contact-pic{
-    background-image: url(../Img/contact-us-banner-.jpg);
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.568)),url(../Img/pic-Roi.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,10 +161,17 @@ footer .links ul li{
 }
 footer .last-link{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 70px;
     color: white;
     cursor: pointer;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    font-size: 14px;
 }
 footer .links .row .col a:hover{
     text-decoration: none;
@@ -197,8 +205,8 @@ footer .links .row .col a:hover{
 }
 hr{
     height: 1px;
-    color: orange;
-    background-color: orange;
+    color: grey;
+    background-color: grey;
     border: none;
 }
 @media screen and (max-width:768px){
@@ -214,8 +222,7 @@ hr{
        transition: 0.5s;
         }
     form{
-        max-width: 300px;
-        min-width: 300px;
+        width: 300px;
         padding: 10px 50px;
         margin-right: 40px !important;
     }
@@ -239,20 +246,23 @@ hr{
   .contact-form{
       display: none;
   } 
-  .logo{
-    margin-left: 45px !important;
-}
+/*
 .links p{
     margin-left: 45px;
+}*/
 }
-}
-@media screen and (max-width: 375px){
-    form{
-        width: 200px;
-        margin-right: 50px !important;
+@media screen and (max-width: 414px){
+    .logo{
+        margin-left: 20px !important;
     }
+}
+@media screen and (device-width: 375px){
+    /*form{
+        width: 50% !important;
+        margin-right: 20px !important;
+    }*/
     .black-hr{
-        width: 150px;
+        width: 280px;
         margin-right: 20px !important;
     }
 }

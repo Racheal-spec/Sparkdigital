@@ -22,8 +22,10 @@
     <title>Sparkdigital</title>
 </head>
 
-<body>
-    <header> 
+<body data-barba="wrapper">
+
+    <main data-barba="container">
+    <header>
 <nav class="navbar navbar-expand-sm">
     <div class="container">
        <a href="index.html"><h1 class="logo font-weight-bold animate__animated animate__rotateInDownLeft animate__slow"><span class="spark">Spark</span><span class="dig">digital</span></h1></a>
@@ -32,7 +34,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
 <ul class="navbar-nav text-capitalize font-weight-bold ml-auto animate__animated animate__rotateInDownRight animate__slow">
-   <li class="nav-item"><a class="nav-link text-light link" href="#">Home</a></li>
+   <li class="nav-item"><a class="nav-link text-light link" href="index.html">Home</a></li>
    <li class="nav-item"><a class="nav-link text-light link" href="Aboutflux.html">about us</a></li>
    <li class="nav-item"><a class="nav-link text-light link" href="contact.html">contact us</a></li>
 </ul>
@@ -51,6 +53,8 @@
 </div>
 
 </header>
+
+<div class="loader"></div>
 
 <!--first section starts here-->
 <section class="video-section p-5">
@@ -280,16 +284,16 @@
 </section>
 
 <!--Pricing section starts-->
-
+</main>
 <!--Footer section starts-->
-<footer class="p-5">
-<div class="container-fluid links">
+<footer class="p-4">
+<div class="links">
     <div class="row">
-        <div class="col mr-5">
+        <div class="col-sm-12 col-lg-3">
             <a href="index.html"><h1 class=" mb-5 font-weight-bold my-0 logo"><span class="spark-footer">Spark</span><span class="dig-footer">digital</span></h1></a>   
             <p>You can find us at no.2 canaan land str off Ijoka Lagos state.</p>
         </div>
-        <div class="col ml-5">
+        <div class="col-sm-12 col-lg-3">
             <h2>Quick links</h2>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -299,7 +303,7 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
-        <div class="col ml-5">
+        <div class="col-sm-12 col-lg-3">
             <h2>Quick links</h2>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -309,19 +313,7 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
-        <div class="col ml-5">
-            <h2>Quick links</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <hr>
-        <div>
+        <div class="col-sm-12 col-lg-3">
             <ul class="last-link">
                 <li class=" follow">Follow us:</li>
                <i class="fab fa-instagram fa-2x"></i>
@@ -330,7 +322,10 @@
                <i class="fab fa-facebook fa-2x"></i>
             </ul>
         </div>
-        </div>
+    </div>
+    <hr>
+    <p class="copy-right">&copy; Copyright 2020 developed by Racheltomi</p>
+      </div>      
     </footer>
     <!--footer section ends here-->
 
@@ -342,7 +337,8 @@
     <script src="./JS/bootstrap.bundle.min.js"></script>
 <!--Gsap plugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
-   <!--
+<script src="https://unpkg.com/@barba/core"></script>  
+<!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
