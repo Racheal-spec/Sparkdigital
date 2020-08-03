@@ -3,27 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-:root{
-    overflow-x: hidden;
-}
-.loader{
-    position: fixed;
-    width: 100vw;
-    height: 200vh;
-    pointer-events: none;
-    background-color: rgba(255, 166, 0, 0.582);
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-}
-.is-transitioning {
-    pointer-events: none;
-    cursor: progress;
-}
 body {
     font-family: 'Playfair Display', serif;
      font-size: 18px; 
      background-color: white;
+     overflow-x: hidden;
     }
 .navbar .container a:hover{
     text-decoration: none !important;
@@ -60,8 +44,13 @@ font-size: 2rem;
    cursor: pointer;
 }
 header{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.08'%3E%3Ccircle fill='%23ffa73c' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23fa7a49' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23e5505b' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23c2306b' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23922276' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+background-size: cover;
     background-color: orange;
     min-height: 90vh;
+   border-radius: 0% 0% 20% 20%;
 }
 .hero-spark{
     color: #333333;
@@ -75,6 +64,8 @@ header{
 max-width: 100%;
 height: auto;
 margin-top: 30px;
+clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
+
 }
 .hero-section h1{
     font-size: 4rem;
@@ -298,6 +289,23 @@ hr{
 .animate__animated .animate__fadeInDown{
     --animate-duration: 2s;
 }
+ul.transition{
+     display: flex;
+     position: absolute;
+     z-index: 10;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100%;
+     pointer-events: none;
+     margin: 0;
+     list-style: none;
+}
+ul.transition li{
+    transform: scaleY(0);
+    background: white;
+    width: 20%;
+}
 
 @media screen and (max-width: 991px){
     header{
@@ -314,8 +322,27 @@ hr{
         font-size: 3rem;
     }
 }
-
+@media screen and (min-width: 991px){
+.link{border: none;}
+}
 @media screen and (max-width:768px){
+    ul.transition{
+        display: flex;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        pointer-events: none;
+        margin: 0;
+        list-style: none;
+   }
+   ul.transition li{
+       transform: scaleY(0);
+       background: white;
+       width: 20%;
+   }
     #navbarMenu{
         background-color: #333333;
         border-radius: 8px;
@@ -330,6 +357,7 @@ hr{
     .hero-section h1{
         font-size: 35px !important;
     }
+  
 .nav-link{
     color: #333333;
 }

@@ -7,11 +7,13 @@
 body{
     font-family: 'Playfair Display', serif;
          font-size: 18px; 
+         overflow-x: hidden;
 }
 .bold-heading{
     font-size: 3rem;
     margin-top: 160px;
 }
+
 h2{
     font-size: 2rem;
 }
@@ -71,11 +73,11 @@ font-size: 2rem;
     list-style: none;
 }
 #contact-pic{
-    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.568)),url(../Img/pic-Roi.jpeg);
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.794), rgba(0, 0, 0, 0.746)),url(../Img/pic-Roi.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px; 
+   min-height: 80vh; 
     color: cornsilk;
 }
 .link-support{
@@ -208,6 +210,20 @@ hr{
     color: grey;
     background-color: grey;
     border: none;
+}
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    background-color: #333333d3;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.is-transitioning {
+    pointer-events: none;
+    cursor: progress;
 }
 @media screen and (max-width:768px){
     .menu{
