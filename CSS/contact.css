@@ -211,20 +211,7 @@ hr{
     background-color: grey;
     border: none;
 }
-.loader{
-    position: fixed;
-    width: 100vw;
-    height: 200vh;
-    pointer-events: none;
-    background-color: #333333d3;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-}
-.is-transitioning {
-    pointer-events: none;
-    cursor: progress;
-}
+
 @media screen and (max-width:768px){
     .menu{
         color: white;

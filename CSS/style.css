@@ -8,6 +8,7 @@ body {
      font-size: 18px; 
      background-color: white;
      overflow-x: hidden;
+     position: relative;
     }
 .navbar .container a:hover{
     text-decoration: none !important;
@@ -49,8 +50,7 @@ header{
     background-size: cover;
 background-size: cover;
     background-color: orange;
-    min-height: 90vh;
-   border-radius: 0% 0% 20% 20%;
+    min-height: 60vh;
 }
 .hero-spark{
     color: #333333;
@@ -59,6 +59,7 @@ background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 30px ;
 }
 .hero-section img{
 max-width: 100%;
@@ -71,7 +72,33 @@ clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
     font-size: 4rem;
     color: white;
 }
- 
+.card-overlay{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    border-radius: 20px;
+}
+ .card-overlay img{
+     width: 100%;
+ }
+ .card-btn{
+     color: white;
+     background-color: orange;
+     font-weight: bold;
+     padding: 10px 10px;
+     border-radius: 8px;
+     text-decoration: none;
+ }
+ .card-overlay h1{
+     color: peru;
+ }
+ .card-btn:hover{
+     background-color: peru;
+     text-decoration: none;
+     color: white;
+ }
 .video-background{
     width: 100%;
     height:auto;
@@ -135,6 +162,7 @@ clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
 }
 .setion-2{
     background-color: rgba(255, 166, 0, 0.76);
+    /*background: url(../Img/wave.svg);*/
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -366,6 +394,11 @@ ul.transition li{
     text-align: center;
     margin-top: 30px;
 }
+.card-overlay{
+ display: none;   
+}
+
+
 .video-section h1{
     font-size: 2rem;
 }
