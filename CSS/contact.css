@@ -8,6 +8,7 @@ body{
     font-family: 'Playfair Display', serif;
          font-size: 18px; 
          overflow-x: hidden;
+         line-height: 180%;
 }
 .bold-heading{
     font-size: 3rem;
@@ -64,7 +65,7 @@ font-size: 2rem;
    cursor: pointer;
 }
 .contact-form{
-    background-image: url(../Img/undraw_among_nature_p1xb.svg);
+    background-image: url(../Img/people2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -216,6 +217,13 @@ hr{
     .menu{
         color: white;
     }
+    #navbarMenu{
+        background-color: #333333;
+        margin-top: 25px;
+    }
+        body{
+            font-size: 17px;
+        } 
     .link{
         border: orange solid 2px;
         color: #333333;
@@ -223,6 +231,9 @@ hr{
        background-position: 100% 0%;
        background-size: 100% 200%;
        transition: 0.5s;
+        }
+        #contact-pic h1{
+            margin-top: 5em !important;
         }
     form{
         width: 300px;

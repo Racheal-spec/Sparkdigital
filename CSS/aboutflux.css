@@ -9,6 +9,7 @@ body{
          font-size: 18px; 
          background-color: white;
          overflow-x: hidden;
+         line-height: 180%;
 }
 h2{
     font-size: 3rem;
@@ -110,7 +111,7 @@ font-size: 2rem;
         border-left: 0px solid #000;
         border-bottom: 500px solid transparent;
         padding: 0 20px;
-        margin-top: 30px;
+        margin-top: 5px;
 }
 footer{
     background-color: #333333;
@@ -223,6 +224,13 @@ ul.transition li{
        background: white;
        width: 20%;
    }
+   #navbarMenu{
+    background-color: #333333;
+    margin-top: 25px;
+}
+body{
+    font-size: 17px;
+}
     h2{
         font-size: 2rem;
     }
