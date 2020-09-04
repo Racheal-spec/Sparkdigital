@@ -101,21 +101,24 @@ clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
     width: 50%;
     height: auto;
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 25%;
     border-radius: 20px;
 }
  .card-overlay img{
      width: 100%;
  }
+ .card-body{
+     margin: 0 25px;
+ }
  .card-btn{
      color: white;
      background-color: orange;
      font-weight: bold;
      padding: 10px 10px;
+     margin: 0 5px;
      border-radius: 8px;
      text-decoration: none;
-     transition: all 0.2s ease-in-out;
  }
  .card-overlay h1{
      color: peru;
@@ -125,7 +128,6 @@ clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
      background-color: peru;
      text-decoration: none;
      color: white;
-     transform: scale(1.2);
  }
 
 /*video section styles*/
@@ -168,8 +170,8 @@ clip-path: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
 .cta-overlay{
     color: white;
     position: absolute;
-    text-align: left; 
-    left: 4%;
+    text-align: center; 
+    /*left: 24%;*/
     margin-top: -40%;
     width: 50%;
 }
@@ -374,15 +376,19 @@ ul.transition li{
         margin-top: 60px;
     }
     .cta-overlay{
-        width: 80%;
-        margin-bottom: 60%;
+        width: 100%;
+        margin-bottom: 30%;
+        left: 0 !important;
     }
     .cta-overlay h1{
         font-size: 3rem;
     }
+    .card-overlay{
+        display: none;   
+       }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     ul.transition{
         display: flex;
         position: absolute;
@@ -439,8 +445,7 @@ body{
         color: white;
         position: absolute;
         text-align: center; 
-        left: 0;
-        margin-bottom: 40% !important;
+        left: 0 !important;
         width: 100%;
     }
     .cta-img{
@@ -482,11 +487,6 @@ footer .links ul li{
     line-height: 30px;
 }
 
-/*
-.links p{
-    margin-left: 45px;
-}
-*/
 }
 @media screen and (max-width: 414px){
     .cta-img{
@@ -511,6 +511,12 @@ footer .links ul li{
     }
     .logo{
         margin-left: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1920px){
+    .cta-overlay{
+        left: 24%;
     }
 }
 
