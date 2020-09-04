@@ -50,7 +50,6 @@ function pgTransition() {
     tl.to('ul.transition li', {duration: .5, scaleY: 0, transformOrigin: "bottom left", stagger: .2, delay: .1})
 }
 
-
 barba.init({
     sync: true,
     transitions: [{

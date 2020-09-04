@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: 'Playfair Display', serif;
-         font-size: 18px; 
+        font-family: 'Crimson Text', serif;
+         font-size: 20px; 
          overflow-x: hidden;
          line-height: 180%;
 }
@@ -142,8 +142,7 @@ textarea{
 }
 #submit:hover{
     text-decoration: none;
-    background-color: #80808036;
-    color: orange;
+    background-color: peru;
 }
 footer{
     background-color: #333333;
